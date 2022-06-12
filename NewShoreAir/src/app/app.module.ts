@@ -6,14 +6,14 @@ import { AppComponent } from './app.component';
 import { SearchFlightsComponent } from './components/search-flights/search-flights.component';
 import { InformationComponent } from './components/information/information.component';
 
-import { TripsComponent } from './components/trips/trips.component';
+import { SloganComponent } from './components/slogan/slogan.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { FlightComponent } from './components/flight/flight.component';
 import { LoadingComponent } from './components/loading/loading.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { CurrencyComponent } from './components/currency/currency.component';
 
-import { FormComponent } from './components/form/form.component';
+
+
+
 import { ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { CurrencyChangePipe } from './pipe/currency-change.pipe';
@@ -25,13 +25,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     SearchFlightsComponent,
     InformationComponent,
 
-    TripsComponent,
+    SloganComponent,
     NavbarComponent,
     FlightComponent,
     LoadingComponent,
-    FooterComponent,
-    CurrencyComponent,
-    FormComponent,
+
+
+
+
     CurrencyChangePipe,
 
   ],
