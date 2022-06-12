@@ -1,0 +1,38 @@
+
+
+<div class="box">
+  <div  class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-2">
+        <div class="search">
+          <div class="container">
+            <h1><i class="fa-solid fa-plane-circle-check"></i> 
+              Vuelos
+            </h1>
+
+              <div class="row">
+                <div class=" col-12 col-md-5" id="origin"><i class="fa-solid fa-location-dot"></i> Origen<br>
+                  <input #originSearched (keyup)="validateDiferentFlights(destinationSearched.value, originSearched.value)" type="text" onkeydown="return /[a-z]/i.test(event.key)"
+                     required maxlength="3"  value=""  onkeyup="javascript:this.value=this.value.toUpperCase();  ">
+                </div>
+
+                <div class="col-12 col-md-5 " id="destiny"><i class="fa-solid fa-plane-departure"> </i>Destino<br>
+                  <input #destinationSearched (keyup)="validateDiferentFlights(destinationSearched.value, originSearched.value)" type="text" onkeydown="return /[a-z]/i.test(event.key)"
+                  required maxlength="3"  value=""  onkeyup="javascript:this.value=this.value.toUpperCase(); ">
+                </div>
+
+                <div class="col-12 col-md-1">
+                  <button type="submit" [disabled]="isDisable" (click) = "searchFlights(destinationSearched.value, originSearched.value)" id="buttonSearch" ><i class="fa-solid fa-magnifying-glass"></i>Buscar</button>
+                </div>
+
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+

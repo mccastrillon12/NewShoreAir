@@ -1,0 +1,103 @@
+.box{
+  background:#ddd5f5;
+
+
+
+
+}
+.search{
+  background:#270570;
+  border-radius: 15px;
+  margin-top:15px;
+  margin-bottom: 15px;
+
+
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-size:20px;
+font-family: inherit;
+  margin-top: 10px;
+
+}
+
+
+
+#destiny, #origin, #departure {
+  border:1px solid rgba(128, 128, 128, 0.735);
+  background:#fff;
+  border-radius:6px;
+  height: 60px;
+  color: gray;
+  margin-top: 5px;
+  width: 40%;
+  margin-bottom: 15px;
+  margin-left: 5px;
+
+}
+
+input{
+  border:transparent !important;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  margin-top:-15px
+}
+
+
+
+#departure{
+  margin-top: 5px;
+
+}
+#buttonSearch:not(:disabled){
+  color:white
+}
+
+#buttonSearch{
+  margin-top:10px;
+  background:#fa503f !important;
+  border:none;
+  width: 94px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+
+
+
+
+}
+
+#bu
+.carousel-indicators{
+  width: 50% !important
+}
+
+@media (min-width: 300px){ 
+  .col-md-6.offset-md-2{
+    width: 90%;
+  }
+
+}
+@media (max-width: 768px){
+  #destiny, #origin, #departure {
+    width: 94%;
+  }
+  #buttonSearch{
+    margin-left: 30%;
+  }
+  .col-md-6.offset-md-2{
+    width: 75%;
+  }
+
+  
+}
+@media (min-width: 1024px){
+  .search{
+    width: 130%;
+  }
+  .col-md-6.offset-md-2{
+    width:50%;
+  }
+}

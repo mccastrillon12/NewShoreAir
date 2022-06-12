@@ -1,0 +1,8 @@
+{
+    "/api/*":{
+        "target" : "https://recruiting-api.newshore.es",
+        "secure": true,
+        "logLevel" : "info",
+        "changeOrigin" : true
+    }
+}
