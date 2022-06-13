@@ -26,7 +26,7 @@ export class SearchFlightsComponent implements OnInit {
 
   @Output()
   hasFlights : EventEmitter<boolean> = new EventEmitter<boolean>()
-  
+
 
 
   constructor( private _flightService : FlightService, private _flightPathService : FlightPathService) {
@@ -45,10 +45,11 @@ export class SearchFlightsComponent implements OnInit {
     }
   }
 
+
   searchFlights(destinationSearched:string, originSearched: string){
     this.foundFlights.emit(false);
-    this.loadingState.emit(true); 
-    this.hasFlights.emit(false);     
+    this.loadingState.emit(true);
+    this.hasFlights.emit(false);
     this._flightService.getFlights(0).subscribe(flightsResponse => {
       flightsResponse.forEach( flightResponse => {
          let flight = new Flight();
@@ -57,7 +58,7 @@ export class SearchFlightsComponent implements OnInit {
          flight.origin = flightResponse.departureStation;
          flight.destination = flightResponse.arrivalStation;
          flight.price = flightResponse.price;
-         this.flights.push(flight);     
+         this.flights.push(flight);
       });
       var flightPath = this._flightPathService.createFlightPath(originSearched, destinationSearched, this.flights)
         console.log(flightPath);

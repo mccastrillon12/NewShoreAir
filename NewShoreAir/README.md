@@ -1,27 +1,15 @@
 # NewShoreAir
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
+Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) versión 13.2.2.
 
-## Development server
+# Resumen del proyecto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Este proyecto se encargara de consumir el Api expuesta por Newshore air y armara la ruta disponible para el origen y destino que ingrese el usuario, la aplicación es responsive y se podra visualizar en diferentes dispositivos y cada imagen que la aplicación contiene fue creada desde cero.
 
-## Code scaffolding
+# Como instalar
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+*Descargar el proyecto desde el repositorio.
+*Debemos de estar parados en la raíz del proyecto.
+*Para el correcto consumo del API fue necesario crear un archivo proxy.conf.json el cual nos ayuda a superar el problema de CORS por lo tanto la aplicación se debe de correr con el comando npm start  y no con el comando ng serve -o, esto con el fin de levantar el proxy.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Nota: se han cumplido todos los requerimientos funcionales de la prueba tomando el primer nivel del api.

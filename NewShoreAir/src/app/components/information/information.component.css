@@ -1,4 +1,4 @@
-
+/* images promotions */
 img{
   width:250px;
   margin-left:-30px;
@@ -6,16 +6,16 @@ img{
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.20);
   transition: transform .1s;
   border-radius:15px
-
 }
 
 img:hover{
   transform: scale(1.1);
 }
+/* End images promotions */
 
 
 
-
+/* media query */
 @media (max-width: 1024px){
   #promo {
     margin-left:0px
@@ -23,6 +23,6 @@ img:hover{
   img{
     margin-left:0px;
   }
-
-
 }
+
+/* End media query */

@@ -2,7 +2,7 @@
  <app-search-flights (journey) = "journey = $event" (loadingState) = "loadingState = $event" (foundFlights) = "foundFlights = $event" (hasFlights) = "hasFlights = $event" ></app-search-flights>
 
  <app-flight *ngIf = "foundFlights" [journey] = "journey"></app-flight>
- <p *ngIf = "hasFlights">NO SE ENCONTRARON VUELOS DISPONIBLES</p>
+ <br><p *ngIf = "hasFlights">NO SE ENCONTRARON VUELOS DISPONIBLES</p>
  <app-loading *ngIf = "loadingState"></app-loading>
 
 

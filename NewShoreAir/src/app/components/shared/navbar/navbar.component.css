@@ -1,5 +1,4 @@
 .logo{
-
   background:#f8f9fa
 }
 
@@ -9,19 +8,7 @@ img{
   border-radius:15px;
   margin-left:20%
 }
+/* End imagen logo */
 
-/* items del menu */
-#itemsMenu{
 
-  border-radius:20px;
-  cursor: pointer;
-}
 
-a {
-  color: #339997 !important;
-  font-size:20px;
-  font-family: inherit;
-  margin-top: 10px;
-  margin-left: 10px;
-
-}

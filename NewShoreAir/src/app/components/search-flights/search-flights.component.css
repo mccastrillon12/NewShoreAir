@@ -1,30 +1,25 @@
+/* search box */
 .box{
   background:#ddd5f5;
-
-
-
-
 }
+
 .search{
-  background:#270570;
+  background:#2a2c49;
   border-radius: 15px;
   margin-top:15px;
   margin-bottom: 15px;
-
-
 }
+/* search box */
 
 h1 {
   color: rgb(255, 255, 255);
   font-size:20px;
-font-family: inherit;
+  font-family: inherit;
   margin-top: 10px;
-
 }
 
-
-
-#destiny, #origin, #departure {
+/* search inputs and button  */
+#destiny, #origin {
   border:1px solid rgba(128, 128, 128, 0.735);
   background:#fff;
   border-radius:6px;
@@ -34,7 +29,6 @@ font-family: inherit;
   width: 40%;
   margin-bottom: 15px;
   margin-left: 5px;
-
 }
 
 input{
@@ -46,12 +40,6 @@ input{
   margin-top:-15px
 }
 
-
-
-#departure{
-  margin-top: 5px;
-
-}
 #buttonSearch:not(:disabled){
   color:white
 }
@@ -60,26 +48,24 @@ input{
   margin-top:10px;
   background:#fa503f !important;
   border:none;
-  width: 94px;
+  width: 97px;
   margin-bottom: 15px;
   border-radius: 15px;
-
-
-
-
 }
 
-#bu
-.carousel-indicators{
-  width: 50% !important
-}
+/* search inputs and button  */
 
-@media (min-width: 300px){ 
+
+/* media query */
+@media (min-width: 320px){
   .col-md-6.offset-md-2{
     width: 90%;
   }
 
+
+
 }
+
 @media (max-width: 768px){
   #destiny, #origin, #departure {
     width: 94%;
@@ -91,8 +77,8 @@ input{
     width: 75%;
   }
 
-  
 }
+
 @media (min-width: 1024px){
   .search{
     width: 130%;
@@ -100,4 +86,6 @@ input{
   .col-md-6.offset-md-2{
     width:50%;
   }
+
 }
+/* End media query */
